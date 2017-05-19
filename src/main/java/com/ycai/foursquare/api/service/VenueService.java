@@ -23,8 +23,7 @@ public class VenueService {
 	 * Search for venues by name, latitude and longitude
 	 * @param name Name of venue
 	 * @param ll Latitude and longitude of format xx.xx,yy.yy
-	 * @return
-	 * etc
+	 * @return list of venues
 	 */
 	public Object search(String name, String ll) {
 		String[] args = {clientId, clientSecret, version, ll, name};

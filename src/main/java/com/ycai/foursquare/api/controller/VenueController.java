@@ -18,8 +18,7 @@ public class VenueController {
 	 * Search for venues by name, latitude and longitude
 	 * @param name venue's name, default to costa (coffee)
 	 * @param near Latitude and longitude of the user's location of format - XX.XX,YY.YY. Default to London 
-	 * @return
-	 * etc
+	 * @return list of venues response
 	 */
 	@RequestMapping("/venues/search")
 	public Object search(@RequestParam(value = "name", defaultValue = "costa") String name, 
