@@ -20,7 +20,7 @@ public class VenueService {
 	private final static String version = "20170519";
 	
 	/**  
-	 * Search for vanues by name, latitude and longitude
+	 * Search for venues by name, latitude and longitude
 	 * @param name Name of venue
 	 * @param ll Latitude and longitude of format xx.xx,yy.yy
 	 * @return

@@ -29,4 +29,4 @@ press - ctrl + c
 Further information
 -------------------
 
-https://developer.foursquare.com/docs/venues/search
+* https://developer.foursquare.com/docs/venues/search
