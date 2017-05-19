@@ -22,9 +22,16 @@ public class VenueControllerIT {
     private MockMvc mockMvc;
 
     @Test
-    public void testSearch() throws Exception {
-
-        this.mockMvc.perform(get("/venue/search")).andDo(print()).andExpect(status().isOk())
+    public void testSearchWhenUseDefaultValue() throws Exception {
+        this.mockMvc.perform(get("/venues/search")).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.response.venues").isNotEmpty());
+    }
+    
+    @Test
+    public void testSearchWhenHasParams() throws Exception {
+    	final String near = "52.48,1.89"; //birmingham
+    	final String name = "premierinn";
+        this.mockMvc.perform(get("/venues/search?near=" + near + "&name=" + name)).andDo(print()).andExpect(status().isOk())
                 .andExpect(jsonPath("$.response.venues").isNotEmpty());
     }
 
