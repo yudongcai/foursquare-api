@@ -5,7 +5,7 @@ Goal: provide APIs to integrate with FourSquare
 To Build
 ---------
 1. Install Java 8 SDK
-2. Install latest maven (works with 3.3.9)
+2. Install latest maven (I work with 3.3.9)
 3. Open a command line window, cd to the project's root folder, and run -
 >mvn package
 
@@ -16,11 +16,13 @@ Still in the project's root folder, and run -
         
 To Test
 ---------
-Open a Browser, and open the urls, e.g.
-http://localhost:8080/venues/search
-http://localhost:8080/venues/search?near=52.48,1.89&name=premierinn
+Open a Browser, and open urls, e.g.
 
-You can chose your own values for name (i.e. venue name) and near (latitude,longitue)
+* http://localhost:8080/venues/search
+
+* http://localhost:8080/venues/search?near=52.48,1.89&name=premierinn
+
+You can use your own values for the two parameters - "name" (venue name) and "near" (latitude,longitue)
 
 To Shutdown
 -----------
