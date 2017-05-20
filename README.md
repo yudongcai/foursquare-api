@@ -13,6 +13,11 @@ To Run
 ---------
 Still in the project's root folder, and run -
 >java -jar ./target/foursquare-api-1.0-SNAPSHOT.jar
+
+To Run Integration Test
+-----------------------
+in the project's root folder, and run -
+>mvn verify
         
 To Test
 ---------
