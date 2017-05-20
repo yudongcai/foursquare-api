@@ -42,8 +42,7 @@ public class VenueControllerIT {
     	final String near = "xxxx"; //invalid param
     	final String name = "premierinn";
         this.mockMvc.perform(get("/venues/search?near=" + near + "&name=" + name)).andDo(print())
-        		.andExpect(status().isOk());
-        		//.andExpect(jsonPath("$.venues").isArray());
+        		.andExpect(status().isOk()).andExpect(jsonPath("$.venues").isEmpty());
     }
 
 }
