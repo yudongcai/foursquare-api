@@ -16,7 +16,7 @@ Still in the project's root folder, and run -
         
 To Test
 ---------
-Open a Browser, and open urls, e.g.
+Open urls in a browser, e.g.
 
 * http://localhost:8080/venues/search
 
@@ -24,11 +24,22 @@ Open a Browser, and open urls, e.g.
 
 You can use your own values for the two parameters - "name" (venue name) and "near" (latitude,longitue)
 
+If test with invalid parameter
+------------------------------
+
+If you send a query with invalid format for parameter - near, the REST endpoint will just return an empty venue list.
+
+E.g. this url - http://localhost:8080/venues/search?near=xxxx&name=premierinn returns -
+
+{"venues":[]}
+
 To Shutdown
 -----------
-press - ctrl + c
+Press - ctrl + c
 
 Further information
 -------------------
 
 * https://developer.foursquare.com/docs/venues/search
+
+* The java classes in the model package are generated from foursquare's json response using online tool - http://www.jsonschema2pojo.org/
